@@ -1,0 +1,26 @@
+body {
+    color: green;
+}
+
+
+//Testing nesting which here adds style to h4 and p elements in marketing class
+
+.marketing {
+    h4 a{
+        color: $brand-warning;
+    }
+
+    p {
+        color: $brand-primary;
+    }
+
+    a:hover {
+      color: $link-hover-color;
+    }
+}
+
+//Using a mixin to configure the jumbotron to have a boat shape border.
+.container .jumbotron {
+    @include border-top-radius(0px);
+    @include border-bottom-radius(50px);
+}
