@@ -7,6 +7,7 @@ body {
 //Testing nesting which here adds style to h4 and p elements in marketing class
 
 .marketing {
+
     h4 {
       text-align: center;
     }
@@ -25,8 +26,23 @@ body {
     }
 }
 
+
 //Using a mixin to configure the jumbotron to have a boat shape border.
 .container .jumbotron {
     @include border-top-radius(0px);
     @include border-bottom-radius(50px);
+}
+
+.marketing {
+
+    @include keyframes(slide-down) {
+    0% { opacity: 1; }
+    90% { opacity: 0; }
+}
+
+.marketing {
+    width: 100px;
+    height: 100px;
+    background: black;
+    @include animation('slide-down 5s 3');
 }
