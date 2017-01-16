@@ -1,17 +1,23 @@
 body {
     color: green;
+    font-family: 'Merriweather', serif;
 }
 
 
 //Testing nesting which here adds style to h4 and p elements in marketing class
 
 .marketing {
-    h4 a{
+    h4 {
+      text-align: center;
+    }
+
+    a{
         color: $brand-warning;
     }
 
     p {
         color: $brand-primary;
+        text-align: center;
     }
 
     a:hover {
