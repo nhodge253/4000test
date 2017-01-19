@@ -1,0 +1,1 @@
+"use strict";function fizzbuzz(){for(var a=1;20>=a;a++)console.log(a%3===0&&a%5===0?"FizzBuzz":a%3===0?"Fizz":a%5===0?"Buzz":a)}console.log("'Allo 'Allo!"),fizzbuzz();
